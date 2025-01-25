@@ -14,9 +14,19 @@ function adicionarAmigo() {
 
 adicionarAmigo();
 
-
 function limparCampo(){
    let inputAmigo = document.querySelector('input');
    inputAmigo.value = '';
+}
+
+function ExibirAmigos(){
+    let listaAmigos = document.getElementById('listaAmigos');
+    listaAmigos.innerHTML = ""
+
+    for (let i = 0; i < listaDeNomes.length; i++){
+        let nomesDaLista = document.createElement('li');
+        nomesDaLista.textContent = amigos[i];
+        listaAmigos.appendChild(nomeItem);
+    }
 }
 
