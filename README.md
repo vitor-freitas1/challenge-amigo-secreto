@@ -42,9 +42,18 @@ Antes de começar, é necessário ter um navegador atualizado instalado em sua m
 
 3. Abra o arquivo index.html no navegador.
 
+---
 ## ⚙️ Como usar:
 
 1. Digite o nome de um amigo no campo de texto.
 2. Clique no botão "Adicionar" para incluir o nome na lista.
 3. Após adicionar os amigos, clique no botão "Sortear Amigo" para ver quem foi sorteado.
 4. A lista pode ser visualizada abaixo do campo de entrada.
+
+---
+
+## 🌐 Acesse o projeto online
+
+O projeto pode ser acessado diretamente através do seguinte link:
+
+🔗 [challenge-amigo-secreto](https://vitor-freitas1.github.io/challenge-amigo-secreto/)
