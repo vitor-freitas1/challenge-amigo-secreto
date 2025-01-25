@@ -6,27 +6,29 @@ function adicionarAmigo() {
     if (inputAmigo == ''){
         alert('Por favor, insira um nome.');
     }
-    else {
-        inputAmigo.push(amigos)
+    else if (amigos.includes(inputAmigo)) {
+        alert('Esse nome já foi adicionado.');
+    }
+    else
+    {
+        amigos.push(inputAmigo)
         limparCampo();
+        exibirAmigos();
     }
 }
-
-adicionarAmigo();
 
 function limparCampo(){
    let inputAmigo = document.querySelector('input');
    inputAmigo.value = '';
 }
 
-function ExibirAmigos(){
-    let listaAmigos = document.getElementById('listaAmigos');
-    listaAmigos.innerHTML = ""
+function exibirAmigos(){
+    let lista = document.getElementById('listaAmigos');
+    lista.innerHTML = "";
 
-    for (let i = 0; i < listaDeNomes.length; i++){
-        let nomesDaLista = document.createElement('li');
-        nomesDaLista.textContent = amigos[i];
-        listaAmigos.appendChild(nomeItem);
+    for (let i = 0; i < amigos.length; i++){
+        let elementosDaLista = document.createElement('li');
+        elementosDaLista.textContent = amigos[i];
+        lista.appendChild(elementosDaLista);
     }
 }
-
