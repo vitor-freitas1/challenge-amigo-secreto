@@ -32,3 +32,15 @@ function exibirAmigos(){
         lista.appendChild(elementosDaLista);
     }
 }
+
+function sortearAmigo(){
+    if (amigos.length == 0){
+        alert('Sua lista de amigos não tem nomes. Favor adicionar pelo menos um nome antes de sortear.')
+    }
+    else{
+        let nomeAleatorio = Math.floor(Math.random() * amigos.length);
+        let amigoSorteado = amigos[nomeAleatorio];
+        let mostrarResultado = document.getElementById('resultado');
+        mostrarResultado.innerHTML = "O nome sorteado foi " + amigoSorteado + "!! Me deve um pix :)";
+    }
+}
